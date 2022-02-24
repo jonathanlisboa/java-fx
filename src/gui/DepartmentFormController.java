@@ -76,8 +76,6 @@ public class DepartmentFormController implements Initializable {
 			catch (DbException e) {
 				Alerts.showAlert("Error saving object", null, e.getMessage(), AlertType.ERROR);
 			}
-			entity = getFormData();
-			service.saveOrUpdade(entity);
 		}
 		
 		private void notifyDataChangeListeners() {
